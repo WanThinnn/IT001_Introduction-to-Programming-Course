@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="UbEDMeq2tP4yEUv98Vb8YEqo2ezjGmJwYj1x11Nn">
+
+    <title>View Problem - IT001 - Nhập môn lập trình - UIT - wecode judge</title>
+
+    <!-- Fonts -->
+	<link rel="icon" href="https://khmt.uit.edu.vn/wecode/it001/assets/images/favicon.ico">
+
+    <!-- Styles -->
+	<link rel="stylesheet" type='text/css' href="https://khmt.uit.edu.vn/wecode/it001/assets/styles/bootstrap/cerulean.min.css">
+    <link rel="stylesheet" type='text/css' href="https://khmt.uit.edu.vn/wecode/it001/assets/sbadmin/css/sb-admin.css">
+    <link href="https://khmt.uit.edu.vn/wecode/it001/assets/styles/main.css" rel="stylesheet">
+    <link href="https://khmt.uit.edu.vn/wecode/it001/assets/fontawesome/css/all.min.css" rel="stylesheet">
+    <style media="screen">
+    .wecode_table td{
+        text-align: left;
+    }
+	#problem_pdf_embed{
+		height: 50rem;
+		border: 1rem solid rgba(0,0,0,.1);
+	}
+	#problem_description table  tr{
+		border-width:1px;
+	}
+</style>
+</head>
+<body id="body" class="fixed-nav ">
+    <nav id="mainNav" class="mainNav navbar navbar-expand-lg navbar-dark fixed-top color-assignments bg-dark ">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a  class="navbar-brand" href="https://khmt.uit.edu.vn/wecode/it001/home" class="link-none"><img src="https://khmt.uit.edu.vn/wecode/it001/images/logo.png" height="30px" />IT001 - Nhập môn lập trình - UIT</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav navbar p-0 border-bottom-0 border-start-0 border-end-0 bg-dark navbar-dark navbar-sidenav color-assignments align-items-start" id="exampleAccordion">
+            <li class="nav-item color-dashboard ">
+            <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/home">
+                <i class="fa fa-fw fa-tachometer-alt fa-lg"></i>
+                <span class="nav-link-text">Dashboard</span>
+            </a>
+            </li>
+            <li class="nav-item color-notifications ">
+                <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/notifications">
+                    <i class="fa fa-fw fa-bell fa-lg"></i>
+                    <span class="nav-link-text">Notifications</span>
+                </a>
+            </li>
+            <li class="nav-item color-problem_list ">
+                <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/lops">
+                    <i class="fas fa-school fa-fw fa-lg"></i>
+                    <span class="nav-link-text">Classes</span>
+                </a>
+            </li>
+            <li class="nav-item color-users ">
+                <a href="https://khmt.uit.edu.vn/wecode/it001/practice" class="nav-link">
+                    <i class="fas fa-khanda fa-fw fa-lg"></i>
+                    <span class="nav-link-text">Practice</span>
+                </a>
+            </li>
+            
+            
+            <li class="nav-item color-assignments selected">
+                <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/assignments">
+                    <i class="fa fa-fw fa-folder-open fa-lg"></i>
+                    <span class="nav-link-text">Assignments</span>
+                </a>
+            </li>
+            <li class="nav-item color-all_submissions ">
+                 
+                    <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/submissions/assignment/629/user/4223/problem/all/view/all">
+                                    <i class="fa fa-fw fa-bars fa-lg"></i>
+                    <span class="nav-link-text">Submissions</span>
+                </a>
+            </li>
+            <li class="nav-item color-scoreboard ">
+                <a class="nav-link" 
+                                href="https://khmt.uit.edu.vn/wecode/it001/scoreboard/full/629"
+                
+                >
+                    <i class="fa fa-fw fa-star fa-lg"></i>
+                    <span class="nav-link-text">Scoreboard</span>
+                </a>
+            </li>
+
+            <div class="p-1 sidenav-bottom nav-item mt-auto">
+                <a target="_blank" href="https://www.uit.edu.vn/"><img src="https://khmt.uit.edu.vn/wecode/it001/images/logo_uit.png" height="20px" /></a>
+                <a target="_blank" href="https://cs.uit.edu.vn/"><img src="https://khmt.uit.edu.vn/wecode/it001/images/logo_cs.png" height="20px"/></a>
+                <a href="https://github.com/truongan/wecode-judge" target="_blank">&copy; Wecode Judge</a>
+                <a href="https://github.com/truongan/wecode-judge/tree/docs" target="_blank">Docs</a>
+                <br/>
+                <small><span class="timer text-light"></span></small>
+            </div>
+        </ul>
+
+        <div class="navbar-nav ms-auto">
+                            <div class="px-3 d-flex flex-column justify-content-center  bg-secondary bg-opacity-75" >
+                        IT001.N18 #5  
+                </div>
+                        
+            <div class="top_object countdown d-flex flex-column justify-content-center" id="countdown">
+                <div class="time_block">
+                    <span id="time_days" class="countdown_num"></span>
+                </div>
+            </div>
+            <div class="top_object countdown" id="extra_time">
+                <i class="fa fa-fw fa-plus-square fa-2x"></i>
+                <div class="time_block">
+                    <span>Extra Time</span>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" href="#" id="profile_link" rol="button" aria-expandd="false"><i class="fa fa-fw fa-user"></i>22521385</a>
+                <div class="dropdown-menu dropdown-menu-end ">
+                    <div class="d-flex pe-3 ps-3">
+                        <div class="">
+                            <div class="d-inline-flex">
+                                <form action="https://khmt.uit.edu.vn/wecode/it001/logout" method="POST">
+                                <input type="hidden" name="_token" value="UbEDMeq2tP4yEUv98Vb8YEqo2ezjGmJwYj1x11Nn">                                <button type="submit" class="btn btn-danger me-2 text-nowrap"><i class="fas fa-fw fa-sign-out-alt"></i>Sign out</button>
+                                </form>
+                                <a href="https://khmt.uit.edu.vn/wecode/it001/users/4223" class="btn btn-info text-nowrap"><i class="fas fa-fw fa-wrench"></i>Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div class="content-wrapper"><div class="container-fluid">
+        <div class="row">
+            <div id="page_title" class="fs-5 border shadow bg-light text-dark container-fluid py-3 mb-0 col-12 align-items-center d-flex">
+                <i class="fas fa-puzzle-piece fa-fw fa-lg"></i>
+                <span>Giai thừa kép
+</span>
+                
+
+
+
+ 
+
+            </div>
+        </div>
+        <div id="main_content" class="px-3 pt-3" > 
+            <div class="row">
+	<div class="col-md-7 col-lg-8 col-sm-12">
+		        <div class="problem_description" id="problem_description" 
+        
+		>
+			<p>Viết chương tr&igrave;nh t&iacute;nh Giai thừa k&eacute;p <span style="color:#222222">(k&yacute; hiệu&nbsp;</span><span style="color:#222222">n!!</span><span style="color:#222222">)</span>, biết rằng:</p>
+
+<p><img alt="" src="data:image/png;base64,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" /></p>
+
+<p><strong>INPUT</strong></p>
+
+<p>- Một số nguy&ecirc;n dương n &ge; 1</p>
+
+<p><strong>OUTPUT</strong></p>
+
+<p>- Giai thừa k&eacute;p của n.</p>
+
+<p><strong>V&Iacute; DỤ</strong></p>
+
+<table cellpadding="4" cellspacing="0" style="width:503px">
+	<tbody>
+		<tr>
+			<td>
+			<p><tt>Input</tt></p>
+			</td>
+			<td>
+			<p><tt>Output</tt></p>
+			</td>
+			<td style="border-color:#000000">
+			<p><tt>Giải th&iacute;ch kết qủa</tt></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><tt><span style="color:#222222">8</span></tt></p>
+			</td>
+			<td>
+			<p><tt>384</tt></p>
+			</td>
+			<td>
+			<p><tt><span style="color:#222222">2 &middot; 4 &middot; 6 &middot; 8 =&nbsp;</span><a href="https://vi.wikipedia.org/w/index.php?title=384_(number)&amp;action=edit&amp;redlink=1"><span style="color:#a55858">384</span></a></tt></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><tt><span style="color:#222222">9</span></tt></p>
+			</td>
+			<td>
+			<p><tt>945</tt></p>
+			</td>
+			<td>
+			<p><tt><span style="color:#222222">1 &middot; 3 &middot; 5 &middot; 7 &middot; 9 = 945</span></tt></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+		</div>
+	</div>
+
+	<div class="col-md-5 col-lg-4 ">
+						<div class="problems_widget">
+							IT001.N18 #5 <i class="fa fa-edit  color9"></i> <br/>
+						
+			<p class="text-muted"><span class="badge bg-secondary count_problems">8</span> problems with a total score of <span class="badge bg-secondary sum_score">800</span></p>
+			<table class="wecode_table table  table-bordered">
+				<thead>
+				<tr>
+					<th>#</th>
+					<th>Problem</th>
+					<th>Score</th>
+				</tr>
+				</thead>
+													<tr class="  ">
+						<td>1</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/629/239">Tổng chữ số</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>2</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/629/243">Tổng ước chẵn</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class=" table-active ">
+						<td>3</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/629/234">Giai thừa kép</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>4</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/629/313">Tính S(n)</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>5</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/629/337">Ma trận đơn vị</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>6</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/629/883">Phân số</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>7</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/629/396">Tái chế nến</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>8</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/629/880">Mã số</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+							</table>
+		</div>
+		
+
+		
+	</div>
+</div>
+
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="https://khmt.uit.edu.vn/wecode/it001/assets/js/jquery-3.6.3.min.js"></script>
+    
+    
+    <script type="text/javascript" src="https://khmt.uit.edu.vn/wecode/it001/assets/js/bootstrap.bundle.min.js"></script>
+
+    
+
+    <script	src="https://khmt.uit.edu.vn/wecode/it001/assets/js/notify.min.js"></script>
+
+    <script type="text/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        shj={};
+        wcj={};
+        wcj.site_url = site_url = "https://khmt.uit.edu.vn/wecode/it001";
+        var date = new Date(),
+        utc = new Date(Date.UTC(
+          date.getFullYear(),
+          date.getMonth(),
+          date.getDate(),
+          date.getHours(),
+          date.getMinutes(),
+          date.getSeconds()
+        ));
+
+        shj_now_str = utc.toLocaleTimeString();
+
+        shj.offset = new Date("2024-07-06T09:47:52+0000") - new Date();
+        shj.time = new Date();
+
+        
+        shj.finish_time = new Date("2022-12-26T16:59:00+0000"); 
+        shj.extra_time = 1800000; 
+        shj.color_scheme = 'github';
+    </script>
+
+    
+    <script type="text/javascript" src="https://khmt.uit.edu.vn/wecode/it001/assets/js/shj_functions.js"></script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+    </script>
+<script type="text/javascript" async
+    
+	src="https://khmt.uit.edu.vn/wecode/it001/assets/MathJax-2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/javascript">
+    mathjax_path = "https://khmt.uit.edu.vn/wecode/it001/assets/MathJax-2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"
+</script>
+<script src="https://khmt.uit.edu.vn/wecode/it001/assets/ckeditor/ckeditor.js" charset="utf-8"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+		$('.save-button').click(function(){
+            $.ajax({
+                type: 'POST',
+                url: 'https://khmt.uit.edu.vn/wecode/it001/problems/edit_description/234',
+                data: {
+                    '_token': "UbEDMeq2tP4yEUv98Vb8YEqo2ezjGmJwYj1x11Nn",
+                    content : CKEDITOR.instances.problem_description.getData()
+                },
+                success: function (response) {
+                    if (response == "success"){
+                        $.notify('Change sucessfully saved'
+                            , {position: 'bottom right', className: 'success', autoHideDelay: 3500});
+                        $('.save-button').removeClass('btn-info').addClass('btn-secondary');
+                    }
+                },
+                error: function(response){
+                    $.notify('Error while saving'
+                        , {position: 'bottom right', className: 'error', autoHideDelay: 3500});
+                }
+            });
+        }); 
+    });
+</script>
+
+
+
+</body>
+</html>

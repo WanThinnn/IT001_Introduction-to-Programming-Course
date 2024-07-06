@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="UbEDMeq2tP4yEUv98Vb8YEqo2ezjGmJwYj1x11Nn">
+
+    <title>View Problem - IT001 - Nhập môn lập trình - UIT - wecode judge</title>
+
+    <!-- Fonts -->
+	<link rel="icon" href="https://khmt.uit.edu.vn/wecode/it001/assets/images/favicon.ico">
+
+    <!-- Styles -->
+	<link rel="stylesheet" type='text/css' href="https://khmt.uit.edu.vn/wecode/it001/assets/styles/bootstrap/cerulean.min.css">
+    <link rel="stylesheet" type='text/css' href="https://khmt.uit.edu.vn/wecode/it001/assets/sbadmin/css/sb-admin.css">
+    <link href="https://khmt.uit.edu.vn/wecode/it001/assets/styles/main.css" rel="stylesheet">
+    <link href="https://khmt.uit.edu.vn/wecode/it001/assets/fontawesome/css/all.min.css" rel="stylesheet">
+    <style media="screen">
+    .wecode_table td{
+        text-align: left;
+    }
+	#problem_pdf_embed{
+		height: 50rem;
+		border: 1rem solid rgba(0,0,0,.1);
+	}
+	#problem_description table  tr{
+		border-width:1px;
+	}
+</style>
+</head>
+<body id="body" class="fixed-nav ">
+    <nav id="mainNav" class="mainNav navbar navbar-expand-lg navbar-dark fixed-top color-assignments bg-dark ">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a  class="navbar-brand" href="https://khmt.uit.edu.vn/wecode/it001/home" class="link-none"><img src="https://khmt.uit.edu.vn/wecode/it001/images/logo.png" height="30px" />IT001 - Nhập môn lập trình - UIT</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav navbar p-0 border-bottom-0 border-start-0 border-end-0 bg-dark navbar-dark navbar-sidenav color-assignments align-items-start" id="exampleAccordion">
+            <li class="nav-item color-dashboard ">
+            <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/home">
+                <i class="fa fa-fw fa-tachometer-alt fa-lg"></i>
+                <span class="nav-link-text">Dashboard</span>
+            </a>
+            </li>
+            <li class="nav-item color-notifications ">
+                <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/notifications">
+                    <i class="fa fa-fw fa-bell fa-lg"></i>
+                    <span class="nav-link-text">Notifications</span>
+                </a>
+            </li>
+            <li class="nav-item color-problem_list ">
+                <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/lops">
+                    <i class="fas fa-school fa-fw fa-lg"></i>
+                    <span class="nav-link-text">Classes</span>
+                </a>
+            </li>
+            <li class="nav-item color-users ">
+                <a href="https://khmt.uit.edu.vn/wecode/it001/practice" class="nav-link">
+                    <i class="fas fa-khanda fa-fw fa-lg"></i>
+                    <span class="nav-link-text">Practice</span>
+                </a>
+            </li>
+            
+            
+            <li class="nav-item color-assignments selected">
+                <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/assignments">
+                    <i class="fa fa-fw fa-folder-open fa-lg"></i>
+                    <span class="nav-link-text">Assignments</span>
+                </a>
+            </li>
+            <li class="nav-item color-all_submissions ">
+                 
+                    <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/submissions/assignment/585/user/4223/problem/all/view/all">
+                                    <i class="fa fa-fw fa-bars fa-lg"></i>
+                    <span class="nav-link-text">Submissions</span>
+                </a>
+            </li>
+            <li class="nav-item color-scoreboard ">
+                <a class="nav-link" 
+                                href="https://khmt.uit.edu.vn/wecode/it001/scoreboard/full/585"
+                
+                >
+                    <i class="fa fa-fw fa-star fa-lg"></i>
+                    <span class="nav-link-text">Scoreboard</span>
+                </a>
+            </li>
+
+            <div class="p-1 sidenav-bottom nav-item mt-auto">
+                <a target="_blank" href="https://www.uit.edu.vn/"><img src="https://khmt.uit.edu.vn/wecode/it001/images/logo_uit.png" height="20px" /></a>
+                <a target="_blank" href="https://cs.uit.edu.vn/"><img src="https://khmt.uit.edu.vn/wecode/it001/images/logo_cs.png" height="20px"/></a>
+                <a href="https://github.com/truongan/wecode-judge" target="_blank">&copy; Wecode Judge</a>
+                <a href="https://github.com/truongan/wecode-judge/tree/docs" target="_blank">Docs</a>
+                <br/>
+                <small><span class="timer text-light"></span></small>
+            </div>
+        </ul>
+
+        <div class="navbar-nav ms-auto">
+                            <div class="px-3 d-flex flex-column justify-content-center  bg-secondary bg-opacity-75" >
+                        IT001.N18 #1  
+                </div>
+                        
+            <div class="top_object countdown d-flex flex-column justify-content-center" id="countdown">
+                <div class="time_block">
+                    <span id="time_days" class="countdown_num"></span>
+                </div>
+            </div>
+            <div class="top_object countdown" id="extra_time">
+                <i class="fa fa-fw fa-plus-square fa-2x"></i>
+                <div class="time_block">
+                    <span>Extra Time</span>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" href="#" id="profile_link" rol="button" aria-expandd="false"><i class="fa fa-fw fa-user"></i>22521385</a>
+                <div class="dropdown-menu dropdown-menu-end ">
+                    <div class="d-flex pe-3 ps-3">
+                        <div class="">
+                            <div class="d-inline-flex">
+                                <form action="https://khmt.uit.edu.vn/wecode/it001/logout" method="POST">
+                                <input type="hidden" name="_token" value="UbEDMeq2tP4yEUv98Vb8YEqo2ezjGmJwYj1x11Nn">                                <button type="submit" class="btn btn-danger me-2 text-nowrap"><i class="fas fa-fw fa-sign-out-alt"></i>Sign out</button>
+                                </form>
+                                <a href="https://khmt.uit.edu.vn/wecode/it001/users/4223" class="btn btn-info text-nowrap"><i class="fas fa-fw fa-wrench"></i>Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div class="content-wrapper"><div class="container-fluid">
+        <div class="row">
+            <div id="page_title" class="fs-5 border shadow bg-light text-dark container-fluid py-3 mb-0 col-12 align-items-center d-flex">
+                <i class="fas fa-puzzle-piece fa-fw fa-lg"></i>
+                <span>KFC
+</span>
+                
+
+
+
+ 
+
+            </div>
+        </div>
+        <div id="main_content" class="px-3 pt-3" > 
+            <div class="row">
+	<div class="col-md-7 col-lg-8 col-sm-12">
+		        <div class="problem_description" id="problem_description" 
+        
+		>
+			<p>B&igrave;nh vừa mua x&aacute;ch tay một c&aacute;i nhiệt kế hồng ngoại cực xịn cực ch&iacute;nh x&aacute;c mỗi tội n&oacute; chỉ hiển thị nhiệt độ theo thang đo độ F - Farenheit. H&atilde;y gi&uacute;p B&igrave;nh đổi n&oacute; qua độ C - Celsius v&agrave; độ K - Kelvin</p>
+
+<h2>INPUT</h2>
+
+<p>Một con số thực l&agrave; nhiệt độ theo thang đo độ F.</p>
+
+<h2>OUTPUT</h2>
+
+<p>Hai con số: l&agrave; nhiệt độ theo thang độ C v&agrave; độ K.</p>
+
+<h2>V&Iacute; DỤ</h2>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width:100%">
+	<tbody>
+		<tr>
+			<td style="text-align:center; vertical-align:top; width:50%"><tt><strong>INPUT</strong></tt></td>
+			<td style="text-align:center; vertical-align:top; width:50%"><tt><strong>OUTPUT</strong></tt></td>
+		</tr>
+		<tr>
+			<td style="vertical-align:top; width:50%">
+			<p><tt>658.4</tt></p>
+			</td>
+			<td style="vertical-align:top; width:50%">
+			<p><tt>348 621.15</tt></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="vertical-align:top; width:50%">
+			<p><tt>472.6</tt></p>
+			</td>
+			<td style="vertical-align:top; width:50%">
+			<p><tt>244.778 517.928</tt></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+		</div>
+	</div>
+
+	<div class="col-md-5 col-lg-4 ">
+						<div class="problems_widget">
+							IT001.N18 #1 <i class="fa fa-edit  color9"></i> <br/>
+						
+			<p class="text-muted"><span class="badge bg-secondary count_problems">10</span> problems with a total score of <span class="badge bg-secondary sum_score">1000</span></p>
+			<table class="wecode_table table  table-bordered">
+				<thead>
+				<tr>
+					<th>#</th>
+					<th>Problem</th>
+					<th>Score</th>
+				</tr>
+				</thead>
+													<tr class="  ">
+						<td>1</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/585/24">Dây xích</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>2</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/585/25">Gà và chó</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>3</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/585/200">Mua Coca</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>4</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/585/150">Tổng lớn nhất</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>5</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/585/265">Số nguyên mới</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class=" table-active ">
+						<td>6</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/585/825">KFC</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>7</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/585/263">Độ trẻ của số</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>8</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/585/448">Tổng ước số</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>9</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/585/390">Phần thưởng</a>
+						</td>
+						<td  class=""><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>10</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/585/521">Phong bì</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+							</table>
+		</div>
+		
+
+		
+	</div>
+</div>
+
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="https://khmt.uit.edu.vn/wecode/it001/assets/js/jquery-3.6.3.min.js"></script>
+    
+    
+    <script type="text/javascript" src="https://khmt.uit.edu.vn/wecode/it001/assets/js/bootstrap.bundle.min.js"></script>
+
+    
+
+    <script	src="https://khmt.uit.edu.vn/wecode/it001/assets/js/notify.min.js"></script>
+
+    <script type="text/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        shj={};
+        wcj={};
+        wcj.site_url = site_url = "https://khmt.uit.edu.vn/wecode/it001";
+        var date = new Date(),
+        utc = new Date(Date.UTC(
+          date.getFullYear(),
+          date.getMonth(),
+          date.getDate(),
+          date.getHours(),
+          date.getMinutes(),
+          date.getSeconds()
+        ));
+
+        shj_now_str = utc.toLocaleTimeString();
+
+        shj.offset = new Date("2024-07-06T09:28:57+0000") - new Date();
+        shj.time = new Date();
+
+        
+        shj.finish_time = new Date("2022-10-17T17:00:00+0000"); 
+        shj.extra_time = 4860000; 
+        shj.color_scheme = 'github';
+    </script>
+
+    
+    <script type="text/javascript" src="https://khmt.uit.edu.vn/wecode/it001/assets/js/shj_functions.js"></script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+    </script>
+<script type="text/javascript" async
+    
+	src="https://khmt.uit.edu.vn/wecode/it001/assets/MathJax-2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/javascript">
+    mathjax_path = "https://khmt.uit.edu.vn/wecode/it001/assets/MathJax-2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"
+</script>
+<script src="https://khmt.uit.edu.vn/wecode/it001/assets/ckeditor/ckeditor.js" charset="utf-8"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+		$('.save-button').click(function(){
+            $.ajax({
+                type: 'POST',
+                url: 'https://khmt.uit.edu.vn/wecode/it001/problems/edit_description/825',
+                data: {
+                    '_token': "UbEDMeq2tP4yEUv98Vb8YEqo2ezjGmJwYj1x11Nn",
+                    content : CKEDITOR.instances.problem_description.getData()
+                },
+                success: function (response) {
+                    if (response == "success"){
+                        $.notify('Change sucessfully saved'
+                            , {position: 'bottom right', className: 'success', autoHideDelay: 3500});
+                        $('.save-button').removeClass('btn-info').addClass('btn-secondary');
+                    }
+                },
+                error: function(response){
+                    $.notify('Error while saving'
+                        , {position: 'bottom right', className: 'error', autoHideDelay: 3500});
+                }
+            });
+        }); 
+    });
+</script>
+
+
+
+</body>
+</html>

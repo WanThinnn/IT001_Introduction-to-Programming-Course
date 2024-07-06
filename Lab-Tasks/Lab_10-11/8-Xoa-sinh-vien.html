@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="UbEDMeq2tP4yEUv98Vb8YEqo2ezjGmJwYj1x11Nn">
+
+    <title>View Problem - IT001 - Nhập môn lập trình - UIT - wecode judge</title>
+
+    <!-- Fonts -->
+	<link rel="icon" href="https://khmt.uit.edu.vn/wecode/it001/assets/images/favicon.ico">
+
+    <!-- Styles -->
+	<link rel="stylesheet" type='text/css' href="https://khmt.uit.edu.vn/wecode/it001/assets/styles/bootstrap/cerulean.min.css">
+    <link rel="stylesheet" type='text/css' href="https://khmt.uit.edu.vn/wecode/it001/assets/sbadmin/css/sb-admin.css">
+    <link href="https://khmt.uit.edu.vn/wecode/it001/assets/styles/main.css" rel="stylesheet">
+    <link href="https://khmt.uit.edu.vn/wecode/it001/assets/fontawesome/css/all.min.css" rel="stylesheet">
+    <style media="screen">
+    .wecode_table td{
+        text-align: left;
+    }
+	#problem_pdf_embed{
+		height: 50rem;
+		border: 1rem solid rgba(0,0,0,.1);
+	}
+	#problem_description table  tr{
+		border-width:1px;
+	}
+</style>
+</head>
+<body id="body" class="fixed-nav ">
+    <nav id="mainNav" class="mainNav navbar navbar-expand-lg navbar-dark fixed-top color-assignments bg-dark ">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a  class="navbar-brand" href="https://khmt.uit.edu.vn/wecode/it001/home" class="link-none"><img src="https://khmt.uit.edu.vn/wecode/it001/images/logo.png" height="30px" />IT001 - Nhập môn lập trình - UIT</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav navbar p-0 border-bottom-0 border-start-0 border-end-0 bg-dark navbar-dark navbar-sidenav color-assignments align-items-start" id="exampleAccordion">
+            <li class="nav-item color-dashboard ">
+            <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/home">
+                <i class="fa fa-fw fa-tachometer-alt fa-lg"></i>
+                <span class="nav-link-text">Dashboard</span>
+            </a>
+            </li>
+            <li class="nav-item color-notifications ">
+                <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/notifications">
+                    <i class="fa fa-fw fa-bell fa-lg"></i>
+                    <span class="nav-link-text">Notifications</span>
+                </a>
+            </li>
+            <li class="nav-item color-problem_list ">
+                <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/lops">
+                    <i class="fas fa-school fa-fw fa-lg"></i>
+                    <span class="nav-link-text">Classes</span>
+                </a>
+            </li>
+            <li class="nav-item color-users ">
+                <a href="https://khmt.uit.edu.vn/wecode/it001/practice" class="nav-link">
+                    <i class="fas fa-khanda fa-fw fa-lg"></i>
+                    <span class="nav-link-text">Practice</span>
+                </a>
+            </li>
+            
+            
+            <li class="nav-item color-assignments selected">
+                <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/assignments">
+                    <i class="fa fa-fw fa-folder-open fa-lg"></i>
+                    <span class="nav-link-text">Assignments</span>
+                </a>
+            </li>
+            <li class="nav-item color-all_submissions ">
+                 
+                    <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/submissions/assignment/664/user/4223/problem/all/view/all">
+                                    <i class="fa fa-fw fa-bars fa-lg"></i>
+                    <span class="nav-link-text">Submissions</span>
+                </a>
+            </li>
+            <li class="nav-item color-scoreboard ">
+                <a class="nav-link" 
+                                href="https://khmt.uit.edu.vn/wecode/it001/scoreboard/full/664"
+                
+                >
+                    <i class="fa fa-fw fa-star fa-lg"></i>
+                    <span class="nav-link-text">Scoreboard</span>
+                </a>
+            </li>
+
+            <div class="p-1 sidenav-bottom nav-item mt-auto">
+                <a target="_blank" href="https://www.uit.edu.vn/"><img src="https://khmt.uit.edu.vn/wecode/it001/images/logo_uit.png" height="20px" /></a>
+                <a target="_blank" href="https://cs.uit.edu.vn/"><img src="https://khmt.uit.edu.vn/wecode/it001/images/logo_cs.png" height="20px"/></a>
+                <a href="https://github.com/truongan/wecode-judge" target="_blank">&copy; Wecode Judge</a>
+                <a href="https://github.com/truongan/wecode-judge/tree/docs" target="_blank">Docs</a>
+                <br/>
+                <small><span class="timer text-light"></span></small>
+            </div>
+        </ul>
+
+        <div class="navbar-nav ms-auto">
+                            <div class="px-3 d-flex flex-column justify-content-center  bg-secondary bg-opacity-75" >
+                        IT001.N18 #10+#11  
+                </div>
+                        
+            <div class="top_object countdown d-flex flex-column justify-content-center" id="countdown">
+                <div class="time_block">
+                    <span id="time_days" class="countdown_num"></span>
+                </div>
+            </div>
+            <div class="top_object countdown" id="extra_time">
+                <i class="fa fa-fw fa-plus-square fa-2x"></i>
+                <div class="time_block">
+                    <span>Extra Time</span>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" href="#" id="profile_link" rol="button" aria-expandd="false"><i class="fa fa-fw fa-user"></i>22521385</a>
+                <div class="dropdown-menu dropdown-menu-end ">
+                    <div class="d-flex pe-3 ps-3">
+                        <div class="">
+                            <div class="d-inline-flex">
+                                <form action="https://khmt.uit.edu.vn/wecode/it001/logout" method="POST">
+                                <input type="hidden" name="_token" value="UbEDMeq2tP4yEUv98Vb8YEqo2ezjGmJwYj1x11Nn">                                <button type="submit" class="btn btn-danger me-2 text-nowrap"><i class="fas fa-fw fa-sign-out-alt"></i>Sign out</button>
+                                </form>
+                                <a href="https://khmt.uit.edu.vn/wecode/it001/users/4223" class="btn btn-info text-nowrap"><i class="fas fa-fw fa-wrench"></i>Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div class="content-wrapper"><div class="container-fluid">
+        <div class="row">
+            <div id="page_title" class="fs-5 border shadow bg-light text-dark container-fluid py-3 mb-0 col-12 align-items-center d-flex">
+                <i class="fas fa-puzzle-piece fa-fw fa-lg"></i>
+                <span>Xóa sinh viên
+</span>
+                
+	<span class="ms-4 fs-6"><a href="https://khmt.uit.edu.vn/wecode/it001/problems/downloadtemplate/362/664" class="link-dark"><i class="fa fa-download text-danger"></i> Download the code template</a></span>
+
+
+
+ 
+
+            </div>
+        </div>
+        <div id="main_content" class="px-3 pt-3" > 
+            <div class="row">
+	<div class="col-md-7 col-lg-8 col-sm-12">
+		        <div class="problem_description" id="problem_description" 
+        
+		>
+			<p style="text-align:justify">Định nghĩa (khai b&aacute;o) kiểu dữ liệu cấu tr&uacute;c để quản l&yacute; sinh vi&ecirc;n gồm c&aacute;c th&agrave;nh phần l&agrave; M&atilde; số Sinh vi&ecirc;n (kiểu chuỗi), Họ v&agrave; T&ecirc;n (kiểu chuỗi), Năm sinh (kiểu chuỗi), Giới t&iacute;nh (kiểu k&yacute; tự), Điểm to&aacute;n (kiểu số thực), Điểm l&yacute; (kiểu số thực), Điểm h&oacute;a (kiểu số thực), Điểm Trung b&igrave;nh (kiểu số thực). Viết Chương tr&igrave;nh nhập mảng gồm n (0 &lt; n &le; 100) sinh vi&ecirc;n v&agrave; xuất mảng sinh vi&ecirc;n sau khi đ&atilde; x&oacute;a tất cả c&aacute;c sinh vi&ecirc;n c&oacute; họ t&ecirc;n X (X được nhập v&agrave;o).</p>
+
+<p style="text-align:justify"><strong>Lưu &yacute;:</strong> Điểm trung b&igrave;nh được t&iacute;nh bằng c&ocirc;ng thức: (Điểm to&aacute;n+Điểm l&yacute;+Điểm h&oacute;a)/3.</p>
+
+<p style="text-align:justify"><!--<h3><span class="math-tex">\(S={ }\)</span></h3>
+--></p>
+
+<h3 style="text-align:justify"><strong>Input</strong></h3>
+
+<p style="text-align:justify">D&atilde;y c&aacute;c k&yacute; tự v&agrave; số, trong đ&oacute;: (Giả sử lu&ocirc;n thỏa điều kiện nhập)</p>
+
+<ul>
+	<li style="text-align:justify">D&ograve;ng đầu ti&ecirc;n: Họ t&ecirc;n của sinh vi&ecirc;n cần x&oacute;a.</li>
+	<li style="text-align:justify">D&ograve;ng tiếp theo: Số lượng n phần tử trong danh s&aacute;ch.</li>
+	<li style="text-align:justify">(n*7) d&ograve;ng li&ecirc;n tiếp tiếp theo: Trong đ&oacute; cứ mỗi 7 d&ograve;ng thể hiện 7 th&ocirc;ng tin của một sinh vi&ecirc;n trong mảng:
+	<ul>
+		<li>D&ograve;ng thứ 1: Chuỗi M&atilde; số sinh vi&ecirc;n.</li>
+		<li>D&ograve;ng thứ 2: Chuỗi Họ t&ecirc;n sinh vi&ecirc;n.</li>
+		<li>D&ograve;ng thứ 3: Chuỗi Ng&agrave;y th&aacute;ng năm sinh.</li>
+		<li>D&ograve;ng thứ 4: K&yacute; tự thể hiện giới t&iacute;nh: <code>M</code> (Nam) hoặc <code>F</code> (Nữ).</li>
+		<li>D&ograve;ng thứ 5: Số thực lưu Điểm to&aacute;n.</li>
+		<li>D&ograve;ng thứ 6: Số thực lưu Điểm l&yacute;.</li>
+		<li>D&ograve;ng thứ 7: Số thực lưu Điểm h&oacute;a.</li>
+	</ul>
+	</li>
+</ul>
+
+<h3 style="text-align:justify"><strong>Output</strong></h3>
+
+<p style="text-align:justify">Hiển thị mảng sinh vi&ecirc;n sau khi đ&atilde; x&oacute;a theo y&ecirc;u cầu. Th&ocirc;ng tin c&aacute;c sinh vi&ecirc;n được hiển thị tr&ecirc;n c&aacute;c d&ograve;ng li&ecirc;n tiếp. Mỗi d&ograve;ng hiển thị 8 th&ocirc;ng tin theo thứ tự: <strong> M&atilde; số Sinh vi&ecirc;n, Họ v&agrave; T&ecirc;n, Năm sinh, Giới t&iacute;nh, Điểm to&aacute;n, Điểm l&yacute;, Điểm h&oacute;a, Điểm Trung b&igrave;nh.</strong></p>
+
+<p style="text-align:justify"><strong>Lưu &yacute;:</strong></p>
+
+<ul>
+	<li style="text-align:justify">Mỗi th&ocirc;ng tin c&aacute;ch nhau một dấu <code>tab</code>.</li>
+	<li style="text-align:justify">Điểm trung b&igrave;nh hiển thị ba&nbsp;số lẻ sau dấu thập ph&acirc;n (nếu c&oacute;). Gợi &yacute; d&ugrave;ng <code>precision</code>.</li>
+</ul>
+
+<h3 style="text-align:justify"><strong>V&iacute; dụ</strong></h3>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width:500px">
+	<tbody>
+		<tr>
+			<td style="text-align:center"><strong>Input</strong></td>
+			<td style="text-align:center"><strong>Output</strong></td>
+		</tr>
+		<tr>
+			<td>
+			<pre>
+Nguyen Thi Lan
+3
+07520504
+Nguyen Thi Lan
+31/07/1989
+M
+10
+9.5
+10
+07520045
+Nguyen Thi Lan
+27/05/1989
+F
+10
+9
+8
+07521111
+Nguyen Anh Hong
+07/12/1991
+F
+7
+9
+8
+</pre>
+			</td>
+			<td>
+			<pre>
+07521111	Nguyen Anh Hong	07/12/1991	F	7	9	8	8
+</pre>
+			</td>
+		</tr>
+	</tbody>
+</table>
+		</div>
+	</div>
+
+	<div class="col-md-5 col-lg-4 ">
+						<div class="problems_widget">
+							IT001.N18 #10+#11 <i class="fa fa-edit  color9"></i> <br/>
+						
+			<p class="text-muted"><span class="badge bg-secondary count_problems">10</span> problems with a total score of <span class="badge bg-secondary sum_score">1000</span></p>
+			<table class="wecode_table table  table-bordered">
+				<thead>
+				<tr>
+					<th>#</th>
+					<th>Problem</th>
+					<th>Score</th>
+				</tr>
+				</thead>
+													<tr class="  ">
+						<td>1</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/352">Giá trị lớn nhất của cột</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>2</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/770">So sánh chuỗi</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>3</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/941">Đảo tiếng</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>4</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/354">Chèn chuỗi</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>5</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/938">Nối chuỗi</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>6</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/366">Chia 2 phân số</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>7</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/364">Nhập danh sách sinh viên</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class=" table-active ">
+						<td>8</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/362">Xóa sinh viên</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>9</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/518">Dung kế</a>
+						</td>
+						<td  class=""><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>10</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/27">Sửa hàng rào</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+							</table>
+		</div>
+		
+
+		
+	</div>
+</div>
+
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="https://khmt.uit.edu.vn/wecode/it001/assets/js/jquery-3.6.3.min.js"></script>
+    
+    
+    <script type="text/javascript" src="https://khmt.uit.edu.vn/wecode/it001/assets/js/bootstrap.bundle.min.js"></script>
+
+    
+
+    <script	src="https://khmt.uit.edu.vn/wecode/it001/assets/js/notify.min.js"></script>
+
+    <script type="text/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        shj={};
+        wcj={};
+        wcj.site_url = site_url = "https://khmt.uit.edu.vn/wecode/it001";
+        var date = new Date(),
+        utc = new Date(Date.UTC(
+          date.getFullYear(),
+          date.getMonth(),
+          date.getDate(),
+          date.getHours(),
+          date.getMinutes(),
+          date.getSeconds()
+        ));
+
+        shj_now_str = utc.toLocaleTimeString();
+
+        shj.offset = new Date("2024-07-06T09:59:13+0000") - new Date();
+        shj.time = new Date();
+
+        
+        shj.finish_time = new Date("2023-02-13T16:59:00+0000"); 
+        shj.extra_time = 604800; 
+        shj.color_scheme = 'github';
+    </script>
+
+    
+    <script type="text/javascript" src="https://khmt.uit.edu.vn/wecode/it001/assets/js/shj_functions.js"></script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+    </script>
+<script type="text/javascript" async
+    
+	src="https://khmt.uit.edu.vn/wecode/it001/assets/MathJax-2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/javascript">
+    mathjax_path = "https://khmt.uit.edu.vn/wecode/it001/assets/MathJax-2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"
+</script>
+<script src="https://khmt.uit.edu.vn/wecode/it001/assets/ckeditor/ckeditor.js" charset="utf-8"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+		$('.save-button').click(function(){
+            $.ajax({
+                type: 'POST',
+                url: 'https://khmt.uit.edu.vn/wecode/it001/problems/edit_description/362',
+                data: {
+                    '_token': "UbEDMeq2tP4yEUv98Vb8YEqo2ezjGmJwYj1x11Nn",
+                    content : CKEDITOR.instances.problem_description.getData()
+                },
+                success: function (response) {
+                    if (response == "success"){
+                        $.notify('Change sucessfully saved'
+                            , {position: 'bottom right', className: 'success', autoHideDelay: 3500});
+                        $('.save-button').removeClass('btn-info').addClass('btn-secondary');
+                    }
+                },
+                error: function(response){
+                    $.notify('Error while saving'
+                        , {position: 'bottom right', className: 'error', autoHideDelay: 3500});
+                }
+            });
+        }); 
+    });
+</script>
+
+
+
+</body>
+</html>

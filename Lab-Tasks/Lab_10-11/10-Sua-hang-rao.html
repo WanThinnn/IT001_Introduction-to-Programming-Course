@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="UbEDMeq2tP4yEUv98Vb8YEqo2ezjGmJwYj1x11Nn">
+
+    <title>View Problem - IT001 - Nhập môn lập trình - UIT - wecode judge</title>
+
+    <!-- Fonts -->
+	<link rel="icon" href="https://khmt.uit.edu.vn/wecode/it001/assets/images/favicon.ico">
+
+    <!-- Styles -->
+	<link rel="stylesheet" type='text/css' href="https://khmt.uit.edu.vn/wecode/it001/assets/styles/bootstrap/cerulean.min.css">
+    <link rel="stylesheet" type='text/css' href="https://khmt.uit.edu.vn/wecode/it001/assets/sbadmin/css/sb-admin.css">
+    <link href="https://khmt.uit.edu.vn/wecode/it001/assets/styles/main.css" rel="stylesheet">
+    <link href="https://khmt.uit.edu.vn/wecode/it001/assets/fontawesome/css/all.min.css" rel="stylesheet">
+    <style media="screen">
+    .wecode_table td{
+        text-align: left;
+    }
+	#problem_pdf_embed{
+		height: 50rem;
+		border: 1rem solid rgba(0,0,0,.1);
+	}
+	#problem_description table  tr{
+		border-width:1px;
+	}
+</style>
+</head>
+<body id="body" class="fixed-nav ">
+    <nav id="mainNav" class="mainNav navbar navbar-expand-lg navbar-dark fixed-top color-assignments bg-dark ">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a  class="navbar-brand" href="https://khmt.uit.edu.vn/wecode/it001/home" class="link-none"><img src="https://khmt.uit.edu.vn/wecode/it001/images/logo.png" height="30px" />IT001 - Nhập môn lập trình - UIT</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav navbar p-0 border-bottom-0 border-start-0 border-end-0 bg-dark navbar-dark navbar-sidenav color-assignments align-items-start" id="exampleAccordion">
+            <li class="nav-item color-dashboard ">
+            <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/home">
+                <i class="fa fa-fw fa-tachometer-alt fa-lg"></i>
+                <span class="nav-link-text">Dashboard</span>
+            </a>
+            </li>
+            <li class="nav-item color-notifications ">
+                <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/notifications">
+                    <i class="fa fa-fw fa-bell fa-lg"></i>
+                    <span class="nav-link-text">Notifications</span>
+                </a>
+            </li>
+            <li class="nav-item color-problem_list ">
+                <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/lops">
+                    <i class="fas fa-school fa-fw fa-lg"></i>
+                    <span class="nav-link-text">Classes</span>
+                </a>
+            </li>
+            <li class="nav-item color-users ">
+                <a href="https://khmt.uit.edu.vn/wecode/it001/practice" class="nav-link">
+                    <i class="fas fa-khanda fa-fw fa-lg"></i>
+                    <span class="nav-link-text">Practice</span>
+                </a>
+            </li>
+            
+            
+            <li class="nav-item color-assignments selected">
+                <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/assignments">
+                    <i class="fa fa-fw fa-folder-open fa-lg"></i>
+                    <span class="nav-link-text">Assignments</span>
+                </a>
+            </li>
+            <li class="nav-item color-all_submissions ">
+                 
+                    <a class="nav-link" href="https://khmt.uit.edu.vn/wecode/it001/submissions/assignment/664/user/4223/problem/all/view/all">
+                                    <i class="fa fa-fw fa-bars fa-lg"></i>
+                    <span class="nav-link-text">Submissions</span>
+                </a>
+            </li>
+            <li class="nav-item color-scoreboard ">
+                <a class="nav-link" 
+                                href="https://khmt.uit.edu.vn/wecode/it001/scoreboard/full/664"
+                
+                >
+                    <i class="fa fa-fw fa-star fa-lg"></i>
+                    <span class="nav-link-text">Scoreboard</span>
+                </a>
+            </li>
+
+            <div class="p-1 sidenav-bottom nav-item mt-auto">
+                <a target="_blank" href="https://www.uit.edu.vn/"><img src="https://khmt.uit.edu.vn/wecode/it001/images/logo_uit.png" height="20px" /></a>
+                <a target="_blank" href="https://cs.uit.edu.vn/"><img src="https://khmt.uit.edu.vn/wecode/it001/images/logo_cs.png" height="20px"/></a>
+                <a href="https://github.com/truongan/wecode-judge" target="_blank">&copy; Wecode Judge</a>
+                <a href="https://github.com/truongan/wecode-judge/tree/docs" target="_blank">Docs</a>
+                <br/>
+                <small><span class="timer text-light"></span></small>
+            </div>
+        </ul>
+
+        <div class="navbar-nav ms-auto">
+                            <div class="px-3 d-flex flex-column justify-content-center  bg-secondary bg-opacity-75" >
+                        IT001.N18 #10+#11  
+                </div>
+                        
+            <div class="top_object countdown d-flex flex-column justify-content-center" id="countdown">
+                <div class="time_block">
+                    <span id="time_days" class="countdown_num"></span>
+                </div>
+            </div>
+            <div class="top_object countdown" id="extra_time">
+                <i class="fa fa-fw fa-plus-square fa-2x"></i>
+                <div class="time_block">
+                    <span>Extra Time</span>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" href="#" id="profile_link" rol="button" aria-expandd="false"><i class="fa fa-fw fa-user"></i>22521385</a>
+                <div class="dropdown-menu dropdown-menu-end ">
+                    <div class="d-flex pe-3 ps-3">
+                        <div class="">
+                            <div class="d-inline-flex">
+                                <form action="https://khmt.uit.edu.vn/wecode/it001/logout" method="POST">
+                                <input type="hidden" name="_token" value="UbEDMeq2tP4yEUv98Vb8YEqo2ezjGmJwYj1x11Nn">                                <button type="submit" class="btn btn-danger me-2 text-nowrap"><i class="fas fa-fw fa-sign-out-alt"></i>Sign out</button>
+                                </form>
+                                <a href="https://khmt.uit.edu.vn/wecode/it001/users/4223" class="btn btn-info text-nowrap"><i class="fas fa-fw fa-wrench"></i>Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div class="content-wrapper"><div class="container-fluid">
+        <div class="row">
+            <div id="page_title" class="fs-5 border shadow bg-light text-dark container-fluid py-3 mb-0 col-12 align-items-center d-flex">
+                <i class="fas fa-puzzle-piece fa-fw fa-lg"></i>
+                <span>Sửa hàng rào
+</span>
+                
+
+
+
+ 
+
+            </div>
+        </div>
+        <div id="main_content" class="px-3 pt-3" > 
+            <div class="row">
+	<div class="col-md-7 col-lg-8 col-sm-12">
+		        <div class="problem_description" id="problem_description" 
+        
+		>
+			<h2><span style="color:#3498db"><strong>SỬA H&Agrave;NG R&Agrave;O</strong></span></h2>
+
+<p style="text-align:justify">Sau khi dựng xong nh&agrave; kho chứa cỏ, d&igrave; Poly quyết định d&ugrave;ng <strong><em>m</em></strong> tấm gỗ c&ograve;n thừa gia cố h&agrave;ng r&agrave;o của vườn rau ngăn kh&ocirc;ng cho g&agrave; v&agrave;o ph&aacute; v&agrave; giao c&ocirc;ng việc n&agrave;y cho T&ocirc;m v&agrave; Hấc Phin l&agrave;m. Nhiệm vụ của hai cậu b&eacute; tội nghiệp l&agrave; đ&oacute;ng th&ecirc;m v&agrave;o c&aacute;c tấm v&aacute;n h&agrave;ng r&agrave;o để c&oacute; h&agrave;ng r&agrave;o mới c&agrave;ng cao c&agrave;ng tốt. Nh&igrave;n vẽ mặt buồn thiu v&agrave; l&oacute;ng ng&oacute;ng của 2 đứa, Jim quyết định sẽ l&agrave;m gi&uacute;p. H&agrave;ng r&agrave;o được gh&eacute;p từ <strong><em>n</em></strong> tấm gỗ c&ugrave;ng độ rộng như nhau v&agrave; bằng độ rộng của c&aacute;c tấm gỗ c&ograve;n thừa, tấm thứ <strong><em>i</em></strong> c&oacute; độ cao <strong><em>a<sub>i</sub></em></strong>, <strong><em>i</em></strong> = 1 &divide; <strong><em>n</em></strong>. T&ocirc;m v&agrave; Hấc Phin chỉ phải xếp c&aacute;c tấm c&ograve;n thừa l&ecirc;n xe ba g&aacute;c để Jim k&eacute;o đi. C&aacute;c tấm gỗ được xếp th&agrave;nh một chồng, t&iacute;nh từ tr&ecirc;n xuống tấm thứ <strong><em>j</em></strong> c&oacute; độ d&agrave;i <strong><em>b<sub>j</sub></em></strong>, <strong><em>j</em></strong> = 1 &divide; <strong><em>m</em></strong>. Jim k&eacute;o xe ba g&aacute;c đi dọc theo h&agrave;ng r&agrave;o. Đến một tấm n&agrave;o đ&oacute; muốn gia cố Jim sẽ lấy một tấm gỗ từ xe đ&oacute;ng tiếp l&ecirc;n tấm gỗ tr&ecirc;n h&agrave;ng r&agrave;o v&agrave; độ cao mới của tấm n&agrave;y tr&ecirc;n h&agrave;ng r&agrave;o sẽ l&agrave; tổng độ cao của tấm cũ v&agrave; tấm mới đ&oacute;ng th&ecirc;m. Jim chỉ đ&oacute;ng th&ecirc;m một tấm mới v&agrave;o tấm cũ v&igrave; muốn đảm bảo độ chắc chắn của h&agrave;ng r&agrave;o. Jim c&oacute; thể lấy tấm tr&ecirc;n c&ugrave;ng ở xe hoặc vất ra khỏi xe một số tấm cho đến khi gặp tấm vừa &yacute;. Người ta vẫn n&oacute;i &ldquo;<em>Kh&ocirc;n đ&acirc;u tới trẻ, khỏe đ&acirc;u tới gi&agrave;</em>!<em>&rdquo;</em>&nbsp; Jim đ&atilde; đứng tuổi v&agrave; kh&ocirc;ng c&ograve;n sức để xếp lại c&aacute;c tấm gỗ bị bỏ ra v&agrave;o xe. Ngo&agrave;i ra, Jim cũng kh&aacute; m&ecirc; t&iacute;n n&ecirc;n kh&ocirc;ng quay lại lấy những tấm đ&atilde; loại.</p>
+
+<p style="text-align:justify">H&atilde;y x&aacute;c định độ cao lớn nhất c&oacute; thể đạt được của h&agrave;ng r&agrave;o sau khi gia cố. Độ cao của h&agrave;ng r&agrave;o được t&iacute;nh bằng độ cao tấm gỗ thấp nhất tr&ecirc;n h&agrave;ng r&agrave;o.</p>
+
+<h3 style="text-align:justify"><span style="color:#3498db"><strong>Input</strong></span></h3>
+
+<p style="text-align:justify">V&agrave;o từ thiết bị nhập chuẩn:</p>
+
+<ul>
+	<li style="text-align:justify">D&ograve;ng đầu ti&ecirc;n chứa số nguy&ecirc;n <strong><em>n</em></strong> (1 &le; <strong><em>n</em></strong> &le; 10<sup>5</sup>),</li>
+	<li style="text-align:justify">D&ograve;ng thứ 2 chứa <strong><em>n</em></strong> số nguy&ecirc;n <strong><em>a<sub>1</sub></em></strong>, <strong><em>a<sub>2</sub></em></strong>, . . ., <strong><em>a<sub>n</sub></em></strong> (1 &le; <strong><em>a<sub>i</sub></em></strong> &le; 10<sup>8</sup>, <strong><em>i</em></strong> = 1 &divide; <strong><em>n</em></strong>),</li>
+	<li style="text-align:justify">D&ograve;ng thứ 3 chứa số nguy&ecirc;n <strong><em>m</em></strong>&nbsp; (1 &le; <strong><em>m</em></strong> &le; 10<sup>5</sup>),</li>
+	<li style="text-align:justify">D&ograve;ng cuối c&ugrave;ng chứ <strong><em>m</em></strong> số nguy&ecirc;n <strong><em>b<sub>1</sub></em></strong>, <strong><em>b<sub>2</sub></em></strong>, . . ., <strong><em>b<sub>m</sub></em></strong> (1 &le; <strong><em>b<sub>j</sub></em></strong> &le; 10<sup>8</sup>, <strong><em>j</em></strong> = 1&divide; <strong><em>m</em></strong>).</li>
+</ul>
+
+<h3 style="text-align:justify"><span style="color:#3498db"><strong>Output</strong></span></h3>
+
+<p style="text-align:justify">Đưa ra thiết bị xuất chuẩn, d&ograve;ng đầu ti&ecirc;n chứa 2 số nguy&ecirc;n <strong><em>h</em></strong> v&agrave; <strong><em>k</em></strong> &ndash; độ cao lớn nhất c&oacute; thể của h&agrave;ng r&agrave;o v&agrave; số tấm gỗ đ&atilde; được đ&oacute;ng th&ecirc;m, mỗi d&ograve;ng trong <strong><em>k</em></strong> d&ograve;ng tiếp theo chứa 2 số nguy&ecirc;n <strong><em>x</em></strong> v&agrave; <strong><em>y</em></strong>, trong đ&oacute; <strong><em>x</em></strong> &ndash; tấm gỗ tr&ecirc;n h&agrave;ng r&agrave;o được đ&oacute;ng cao hơn, <strong><em>y</em></strong> &ndash; tấm gỗ được d&ugrave;ng để đ&oacute;ng. Đưa ra phương &aacute;n c&oacute; c&aacute;c số hiệu tấm v&aacute;n được chọn l&agrave; nhỏ nhất nếu tồn tại nhiều c&aacute;ch đ&oacute;ng kh&aacute;c nhau.</p>
+
+<h3 style="text-align:justify"><span style="color:#3498db"><strong>V&iacute; dụ</strong></span></h3>
+
+<table align="center" border="2">
+	<thead>
+		<tr>
+			<th scope="col" style="background-color:#ffffcc; width:108pt">
+			<p style="text-align:center"><strong><tt>INPUT</tt></strong></p>
+			</th>
+			<th scope="col" style="background-color:#ffffcc; width:121.5pt">
+			<p style="text-align:center"><strong><tt>OUTPUT</tt></strong></p>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="background-color:#ffffcc; height:16.6pt; width:108.0pt">
+			<p><tt><strong>6</strong></tt></p>
+
+			<p><tt><strong>2 5 4 1 7 5</strong></tt></p>
+
+			<p><tt><strong>7</strong></tt></p>
+
+			<p><tt><strong>2 3 1 3 2 4 6</strong></tt></p>
+			</td>
+			<td style="background-color:#ffffcc; height:16.6pt; width:121.5pt">
+			<p><tt><strong>5 3</strong></tt></p>
+
+			<p><tt><strong>1 2</strong></tt></p>
+
+			<p><tt><strong>3 3</strong></tt></p>
+
+			<p><tt><strong>4 6</strong></tt></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+		</div>
+	</div>
+
+	<div class="col-md-5 col-lg-4 ">
+						<div class="problems_widget">
+							IT001.N18 #10+#11 <i class="fa fa-edit  color9"></i> <br/>
+						
+			<p class="text-muted"><span class="badge bg-secondary count_problems">10</span> problems with a total score of <span class="badge bg-secondary sum_score">1000</span></p>
+			<table class="wecode_table table  table-bordered">
+				<thead>
+				<tr>
+					<th>#</th>
+					<th>Problem</th>
+					<th>Score</th>
+				</tr>
+				</thead>
+													<tr class="  ">
+						<td>1</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/352">Giá trị lớn nhất của cột</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>2</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/770">So sánh chuỗi</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>3</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/941">Đảo tiếng</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>4</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/354">Chèn chuỗi</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>5</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/938">Nối chuỗi</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>6</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/366">Chia 2 phân số</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>7</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/364">Nhập danh sách sinh viên</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>8</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/362">Xóa sinh viên</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+													<tr class="  ">
+						<td>9</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/518">Dung kế</a>
+						</td>
+						<td  class=""><span>100</span></td>
+					</tr>
+													<tr class=" table-active ">
+						<td>10</td>
+						<td>
+														<a href="https://khmt.uit.edu.vn/wecode/it001/assignment/664/27">Sửa hàng rào</a>
+						</td>
+						<td  class="text-light bg-success"><span>100</span></td>
+					</tr>
+							</table>
+		</div>
+		
+
+		
+	</div>
+</div>
+
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="https://khmt.uit.edu.vn/wecode/it001/assets/js/jquery-3.6.3.min.js"></script>
+    
+    
+    <script type="text/javascript" src="https://khmt.uit.edu.vn/wecode/it001/assets/js/bootstrap.bundle.min.js"></script>
+
+    
+
+    <script	src="https://khmt.uit.edu.vn/wecode/it001/assets/js/notify.min.js"></script>
+
+    <script type="text/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        shj={};
+        wcj={};
+        wcj.site_url = site_url = "https://khmt.uit.edu.vn/wecode/it001";
+        var date = new Date(),
+        utc = new Date(Date.UTC(
+          date.getFullYear(),
+          date.getMonth(),
+          date.getDate(),
+          date.getHours(),
+          date.getMinutes(),
+          date.getSeconds()
+        ));
+
+        shj_now_str = utc.toLocaleTimeString();
+
+        shj.offset = new Date("2024-07-06T09:59:28+0000") - new Date();
+        shj.time = new Date();
+
+        
+        shj.finish_time = new Date("2023-02-13T16:59:00+0000"); 
+        shj.extra_time = 604800; 
+        shj.color_scheme = 'github';
+    </script>
+
+    
+    <script type="text/javascript" src="https://khmt.uit.edu.vn/wecode/it001/assets/js/shj_functions.js"></script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+    </script>
+<script type="text/javascript" async
+    
+	src="https://khmt.uit.edu.vn/wecode/it001/assets/MathJax-2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/javascript">
+    mathjax_path = "https://khmt.uit.edu.vn/wecode/it001/assets/MathJax-2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"
+</script>
+<script src="https://khmt.uit.edu.vn/wecode/it001/assets/ckeditor/ckeditor.js" charset="utf-8"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+		$('.save-button').click(function(){
+            $.ajax({
+                type: 'POST',
+                url: 'https://khmt.uit.edu.vn/wecode/it001/problems/edit_description/27',
+                data: {
+                    '_token': "UbEDMeq2tP4yEUv98Vb8YEqo2ezjGmJwYj1x11Nn",
+                    content : CKEDITOR.instances.problem_description.getData()
+                },
+                success: function (response) {
+                    if (response == "success"){
+                        $.notify('Change sucessfully saved'
+                            , {position: 'bottom right', className: 'success', autoHideDelay: 3500});
+                        $('.save-button').removeClass('btn-info').addClass('btn-secondary');
+                    }
+                },
+                error: function(response){
+                    $.notify('Error while saving'
+                        , {position: 'bottom right', className: 'error', autoHideDelay: 3500});
+                }
+            });
+        }); 
+    });
+</script>
+
+
+
+</body>
+</html>
